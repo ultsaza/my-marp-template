@@ -1,0 +1,30 @@
+{
+  "name": "meeting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o html -w",
+    "build": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o html",
+    "build:pdf": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o pdf --pdf",
+    "build:pptx": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o pptx --pptx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultsaza/meeting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ultsaza/meeting/issues"
+  },
+  "homepage": "https://github.com/ultsaza/meeting#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.3.1",
+    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-mark": "^4.0.0"
+  }
+}

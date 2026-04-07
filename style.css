@@ -1,0 +1,271 @@
+/* @theme catech */
+
+@import 'default';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* カラートークン */
+
+:root {
+  --black: #000009;
+  --white: #ffffff;
+  --gray: #808080;
+  --primary: #005bac;
+  --secondary: #ff9800;
+  --font-size: 0.6em;
+}
+
+/* ==============================
+   スライド全体
+   ============================== */
+
+section {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  /* 下部バー (beam風): 左半分ダーク / 右半分プライマリー */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='5.35' viewBox='0 0 250 5.35'%3E%3Crect x='0' y='0' width='125' height='5.35' fill='%23000009'/%3E%3Cpath d='M125 2.675V0h125v5.35H125z' fill='%23005bac'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 150% 1em;
+  padding: 2em;
+}
+
+/* ==============================
+   h1: ページ上部のヘッダーバー (beam風)
+   ============================== */
+
+h1:nth-of-type(1) {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--primary);
+  border-top: 0.3em solid var(--primary);
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1.5em;
+  text-indent: 0.5em;
+  margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--black);
+}
+
+/* ==============================
+   ヘッダー・フッター (下部バー内に表示)
+   ============================== */
+
+header {
+  font-size: var(--font-size);
+  text-align: right;
+  position: absolute;
+  top: 96.2%;
+  width: 100%;
+  right: 0;
+  left: -51%;
+  color: var(--white);
+}
+
+footer {
+  font-size: var(--font-size);
+  text-align: left;
+  position: absolute;
+  top: 96.2%;
+  width: 100%;
+  right: 0;
+  left: 50.8%;
+  color: var(--white);
+}
+
+/* ページ番号 */
+section::after {
+  font-size: var(--font-size);
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  text-align: right;
+  top: 96.2%;
+  width: 100%;
+  right: 0;
+  left: -0.5em;
+  color: var(--white);
+}
+
+/* ==============================
+   テキスト要素
+   ============================== */
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li::marker {
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+code {
+  background-color: rgba(100, 100, 100, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+mark {
+  background-color: #f5db7e;
+}
+
+/* ==============================
+   タイトルスライド: <!-- _class: title -->
+   ============================== */
+
+section.title > h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 25px;
+  text-align: center;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 0.2em;
+  height: auto;
+}
+
+section.title > p {
+  position: relative;
+  text-align: center;
+  top: 35px;
+}
+
+/* ==============================
+   装飾クラス: テキスト色
+   ============================== */
+
+.red {
+  color: #ff0000;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.green {
+  color: #61bb61;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.blue {
+  color: #472bff;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.gray {
+  color: #808080a5;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ==============================
+   装飾クラス: マーカー・圏点
+   ============================== */
+
+/* 水色背景マーカー */
+.blue-lined {
+  background: #a1d6e89c;
+  display: inline;
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+/* オレンジ下線マーカー */
+.orange-lined {
+  background: linear-gradient(transparent 70%, rgba(255, 165, 0, 0.6) 0) no-repeat;
+  display: inline;
+  padding: 0 4px;
+  font-weight: bold;
+}
+
+/* オレンジ圏点 */
+.dotted {
+  -webkit-text-emphasis: filled;
+  text-emphasis: filled;
+  -webkit-text-emphasis-color: var(--secondary);
+  text-emphasis-color: var(--secondary);
+  -webkit-text-emphasis-style: circle;
+  text-emphasis-style: circle;
+  font-weight: bold;
+}
+
+/* ==============================
+   レイアウト
+   ============================== */
+
+.center {
+  text-align: center;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.columns-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+/* ==============================
+   汎用コンポーネント
+   ============================== */
+
+.box {
+  padding: 0px 50px 20px 50px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.243);
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.cite {
+  position: absolute;
+  bottom: 30px;
+  font-size: 50%;
+  border-top: solid 1px #7f7f7f;
+  padding-top: 10px;
+}
+
+/* 小さいテキスト: <!-- _class: tinytext --> */
+section.tinytext > p,
+section.tinytext > ul,
+section.tinytext > blockquote {
+  font-size: 0.65em;
+}
+
+/* 画像中央寄せ: ![center](image.png) */
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
