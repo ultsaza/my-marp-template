@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: catech
+theme: kyomu
 paginate: true
 math: katex
 header: name
