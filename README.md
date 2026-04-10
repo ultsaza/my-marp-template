@@ -2,6 +2,8 @@
 
 Marp を使ったプレゼンテーションスライド
 
+abap34さんの https://github.com/abap34/slide-template を元に作成しました
+
 ## ディレクトリ構成
 
 ```
