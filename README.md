@@ -1,7 +1,7 @@
 # Meeting Slides
 
-Marp を使ったプレゼンテーションスライド
-
+[Marp](https://marp.app/) を使ったプレゼンテーションスライド
+<img width="1243" height="700" alt="Image" src="https://github.com/user-attachments/assets/3f0d9ac0-ce74-41b7-850a-09415b05c729" />
 abap34さんの https://github.com/abap34/slide-template を元に作成しました
 
 ## ディレクトリ構成
