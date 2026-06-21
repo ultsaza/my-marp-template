@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Marp slide template",
   "scripts": {
-    "dev": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o html -w",
-    "preview": "marp --engine ./engine.mjs --theme style.css --input-dir slides -s",
-    "build": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o html",
-    "build:pdf": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o pdf --pdf",
-    "build:pptx": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme style.css --input-dir slides -o pptx --pptx"
+    "dev": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o html --allow-local-files -w",
+    "preview": "marp --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -s --allow-local-files",
+    "build": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o html --allow-local-files",
+    "build:pdf": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o pdf --pdf --allow-local-files",
+    "build:pptx": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o pptx --pptx --allow-local-files"
   },
   "keywords": ["marp", "slides", "presentation"],
   "author": "",

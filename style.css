@@ -28,7 +28,7 @@ section {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 150% 1em;
-  padding: 2em;
+  padding: 3.2em 2em 2em 2em;
 }
 
 /* ==============================
@@ -268,4 +268,63 @@ section.tinytext > blockquote {
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
+}
+
+img[alt~="wide"] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img[alt~="medium"] {
+  display: block;
+  max-width: 86%;
+  margin: 0 auto;
+}
+
+img[alt~="short"] {
+  display: block;
+  max-width: 82%;
+  max-height: 15.5rem;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.small {
+  font-size: 0.82em;
+}
+
+.xs {
+  font-size: 0.68em;
+}
+
+.tight li {
+  margin: 0.25em 0;
+}
+
+.metric-table {
+  font-size: 0.66em;
+}
+
+.metric-table table {
+  width: 100%;
+}
+
+.metric-table th,
+.metric-table td {
+  padding: 0.18em 0.35em;
+}
+
+.callout {
+  border-left: 0.35em solid var(--primary);
+  padding: 0.2em 0 0.2em 0.8em;
+  font-weight: 700;
+}
+
+.cite-right {
+  position: absolute;
+  right: 2.4em;
+  bottom: 2.1em;
+  font-size: 0.52em;
+  color: var(--gray);
 }

@@ -7,13 +7,18 @@ abap34さんの https://github.com/abap34/slide-template を元に作成しま�
 ## ディレクトリ構成
 
 ```
-slides/       … Markdown ソース（スライド本体）
-html/         … HTML 出力（gitignore）
-pdf/          … PDF 出力（gitignore）
-pptx/         … PPTX 出力（gitignore）
-style.css     … カスタムテーマ
-engine.mjs    … Markdown 拡張エンジン
+slides/             … Markdown ソース（スライド本体）
+html/               … HTML 出力（gitignore）
+pdf/                … PDF 出力（gitignore）
+pptx/               … PPTX 出力（gitignore）
+style.css           … カスタムテーマ（kyomu）
+science-tokyo.css   … Science Tokyo テーマ（公式PPTXを再現）
+assets/science-tokyo/ … ロゴ・背景素材（テーマに同梱・差し替え用）
+engine.mjs          … Markdown 拡張エンジン
 ```
+
+テーマは `--theme-set` で両方登録済み。各スライドの front-matter の `theme:` で切り替える
+（`theme: kyomu` または `theme: science-tokyo`）。
 
 ## セットアップ
 
@@ -43,6 +48,64 @@ npm run build:pdf
 # PPTX（slides/ → pptx/）
 npm run build:pptx
 ```
+
+## Science Tokyo テーマ
+
+東京科学大学（Institute of Science Tokyo）公式 PowerPoint テンプレート（16:9）を
+Marp 用に再現したテーマ。ブランドカラー `#1C3077` / サブカラー `#7F96C2` / 游ゴシック。
+
+雛形は **`slides/science-tokyo-template.md`**。コピーして中身を書き換えれば使えます。
+
+### 使い方
+
+front-matter で `theme: science-tokyo` を指定する。
+
+```markdown
+---
+marp: true
+theme: science-tokyo
+paginate: true
+---
+
+<!-- _class: title -->
+# プレゼンタイトル
+## 氏名 / Your Name
+###### 役職・所属
+イベント名・日付
+
+---
+
+<!-- _class: section -->
+# 1. 章タイトル
+
+---
+
+# コンテンツのタイトル
+## 見出し（h2）
+本文…（==ハイライト== や **強調**）
+```
+
+### クラス・記法
+
+| 指定 | 用途 |
+|--|--|
+| `<!-- _class: title -->` | 表紙（ネイビー背景・白文字・ロゴ右下） |
+| `<!-- _class: section -->` | 中表紙／章扉（ネイビー） |
+| `<!-- _class: section-light -->` | 中表紙／章扉（ライト） |
+| （無印） | 本文ページ（右上ロゴ＋タイトル下線＋右端バー＋ページ番号） |
+| `#` / `##` / `###` | タイトル / 見出し / 小見出し |
+
+レイアウト・装飾ユーティリティ:
+`.columns` `.columns-3`（カラム）、`.box` `.card`（枠カード）、
+`.navy-card`（ネイビー見出しカード）、`.callout`（左ライン強調）、`.lead`（リード文）、
+`.cite`（出典）、文字色 `.navy .blue .red .green .gold .gray`、
+画像 `![center] ![wide] ![medium] ![short]`。
+
+### ロゴ・背景の差し替え
+
+素材は `assets/science-tokyo/`（`logo.png` / `cover.png` / `section.png` ほか）。
+テーマには base64 で埋め込み済みのため、差し替える場合は画像を置き換えたうえで
+`science-tokyo.css` 末尾の `ASSET DATA` ブロックを再生成する。
 
 ## Markdown 拡張構文
 
