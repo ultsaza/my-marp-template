@@ -237,6 +237,19 @@ section.title > p {
   align-items: center;
 }
 
+.columns > .col,
+.columns-3 > .col {
+  min-width: 0;
+}
+
+.col > :first-child {
+  margin-top: 0;
+}
+
+.col > :last-child {
+  margin-bottom: 0;
+}
+
 /* ==============================
    汎用コンポーネント
    ============================== */
@@ -319,6 +332,17 @@ img[alt~="short"] {
   border-left: 0.35em solid var(--primary);
   padding: 0.2em 0 0.2em 0.8em;
   font-weight: 700;
+}
+
+.note,
+.info,
+.warning {
+  border-left: 0.35em solid var(--primary);
+  padding: 0.2em 0 0.2em 0.8em;
+}
+
+.warning {
+  border-left-color: var(--secondary);
 }
 
 .cite-right {

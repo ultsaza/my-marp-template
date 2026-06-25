@@ -96,9 +96,9 @@ paginate: true
 | `#` / `##` / `###` | タイトル / 見出し / 小見出し |
 
 レイアウト・装飾ユーティリティ:
-`.columns` `.columns-3`（カラム）、`.box` `.card`（枠カード）、
-`.navy-card`（ネイビー見出しカード）、`.callout`（左ライン強調）、`.lead`（リード文）、
-`.cite`（出典）、文字色 `.navy .blue .red .green .gold .gray`、
+`::: cols` `::: cols-3`（カラム）、`::: box` `::: card`（枠カード）、
+`::: navy-card`（ネイビー見出しカード）、`::: callout`（左ライン強調）、`::: lead`（リード文）、
+`.cite`（出典）、文字色 `**text**{.navy}` `**text**{.blue}` `**text**{.red}` `**text**{.green}` `**text**{.gold}` `**text**{.gray}`、
 画像 `![center] ![wide] ![medium] ![short]`。
 
 ### ロゴ・背景の差し替え
@@ -120,19 +120,80 @@ paginate: true
 ### 属性付与（markdown-it-attrs）
 
 要素に class / id / style を直接付与できる。
+`<span class="blue">...</span>` の代わりに、強調や画像などへ直接 class を付けられる。
 
 ```markdown
 **太字**{.blue}
 # 見出し {.special}
-テキスト{style="color:red"}
+**テキスト**{style="color:red"}
+出典：サンプルデータ{.cite}
 ```
 
 ### コンテナ（markdown-it-container）
 
-`note`, `warning`, `info` が使える。
+`box`, `card`, `navy-card`, `callout`, `lead`, `center`, `small`, `xs`, `note`, `warning`, `info`
+などが使える。`<div class="box">...</div>` の代わりに書ける。
 
 ```markdown
-:::note
+::: box
+枠付きカード
+:::
+
+::: callout
+重要な補足
+:::
+
+::: note
 補足テキスト
+:::
+```
+
+### カラム
+
+`::: cols` は 2 カラム、`::: cols-3` は 3 カラム。カラムの区切りは `|||`。
+
+```markdown
+::: cols
+
+### 左カラム
+
+- ポイント 1
+- ポイント 2
+
+|||
+
+### 右カラム
+
+::: callout
+重要な点を強調
+:::
+
+:::
+```
+
+3 カラムのカードも HTML なしで書ける。
+
+```markdown
+::: cols-3
+
+::: navy-card
+#### タイトル A
+本文
+:::
+
+|||
+
+::: navy-card
+#### タイトル B
+本文
+:::
+
+|||
+
+::: navy-card
+#### タイトル C
+本文
+:::
+
 :::
 ```
