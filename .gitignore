@@ -4,3 +4,7 @@ node_modules/
 html/
 pdf/
 pptx/
+.venv-diagrams/
+.verification/
+__pycache__/
+*.pyc

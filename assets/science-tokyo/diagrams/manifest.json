@@ -1,0 +1,305 @@
+{
+  "schema": 1,
+  "source": {
+    "file": "science-tokyo-diagrams.pptx",
+    "sha256": "f040ecd3df15e24b1317556e1cf932a0b04a41d37d810ba1d57563a415a04103"
+  },
+  "canvas_inches": [
+    11.6,
+    4.5
+  ],
+  "slides": [
+    {
+      "id": "dot_matrix_share",
+      "shapes": 108,
+      "charts": 0
+    },
+    {
+      "id": "progress_bubble_matrix",
+      "shapes": 31,
+      "charts": 0
+    },
+    {
+      "id": "ranked_bar_annotated",
+      "shapes": 7,
+      "charts": 1
+    },
+    {
+      "id": "scatter_annotated",
+      "shapes": 7,
+      "charts": 1
+    },
+    {
+      "id": "proportional_circles",
+      "shapes": 11,
+      "charts": 0
+    },
+    {
+      "id": "delta_bars_totals",
+      "shapes": 31,
+      "charts": 0
+    },
+    {
+      "id": "scenario_lines_cagr",
+      "shapes": 11,
+      "charts": 1
+    },
+    {
+      "id": "swimlane_numbered_notes",
+      "shapes": 30,
+      "charts": 0
+    },
+    {
+      "id": "front_back_two_tier",
+      "shapes": 30,
+      "charts": 0
+    },
+    {
+      "id": "chart_insight",
+      "shapes": 8,
+      "charts": 1
+    },
+    {
+      "id": "stacked_bar",
+      "shapes": 7,
+      "charts": 1
+    },
+    {
+      "id": "waterfall",
+      "shapes": 32,
+      "charts": 0
+    },
+    {
+      "id": "true_waterfall",
+      "shapes": 36,
+      "charts": 0
+    },
+    {
+      "id": "small_multiples",
+      "shapes": 73,
+      "charts": 0
+    },
+    {
+      "id": "matrix_2x2",
+      "shapes": 21,
+      "charts": 0
+    },
+    {
+      "id": "issue_to_solution_map",
+      "shapes": 21,
+      "charts": 0
+    },
+    {
+      "id": "issue_tree",
+      "shapes": 33,
+      "charts": 0
+    },
+    {
+      "id": "calc_flow",
+      "shapes": 17,
+      "charts": 0
+    },
+    {
+      "id": "cycle",
+      "shapes": 15,
+      "charts": 0
+    },
+    {
+      "id": "decision_fork",
+      "shapes": 22,
+      "charts": 0
+    },
+    {
+      "id": "roadmap",
+      "shapes": 32,
+      "charts": 0
+    },
+    {
+      "id": "gantt",
+      "shapes": 36,
+      "charts": 0
+    }
+  ],
+  "images": [
+    {
+      "id": "dot_matrix_share",
+      "slide": 1,
+      "file": "dot_matrix_share.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "2aea3e7e5a919d71a6bbb1cfc89889c99374bc16fedf28068bf77be1c8c9de48"
+    },
+    {
+      "id": "progress_bubble_matrix",
+      "slide": 2,
+      "file": "progress_bubble_matrix.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "08782b5d57bf2ee2d09fe75a3e294cee647d063b9af05c94e9b5685b86f19a96"
+    },
+    {
+      "id": "ranked_bar_annotated",
+      "slide": 3,
+      "file": "ranked_bar_annotated.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "2f426fcdbfa77dad80bddf691c6842b70dd0bd3d0181198c3937e4cca8f8b8a2"
+    },
+    {
+      "id": "scatter_annotated",
+      "slide": 4,
+      "file": "scatter_annotated.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "c8b5298eb8e31fac6db9324dbea0f6293a97eea6710b0ddb2f5c27e8c1e461f9"
+    },
+    {
+      "id": "proportional_circles",
+      "slide": 5,
+      "file": "proportional_circles.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "40d0bcc7e5c41864928162c137e8eb8b3d9aa42e39149ff11a9693a5d293e5b1"
+    },
+    {
+      "id": "delta_bars_totals",
+      "slide": 6,
+      "file": "delta_bars_totals.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "5caf418ef435ed4ecf305bf3142d9aac01d449be565ff5d9f52333eaabc125fa"
+    },
+    {
+      "id": "scenario_lines_cagr",
+      "slide": 7,
+      "file": "scenario_lines_cagr.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "32ffd6fa678d635252d36a818163d87d8d3acf2f48cd2ca75ed538839f10fb20"
+    },
+    {
+      "id": "swimlane_numbered_notes",
+      "slide": 8,
+      "file": "swimlane_numbered_notes.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "d8f5f2a5791fc55ddf6814dcbad872f188fc132d88e8171704a4ad2148e706e8"
+    },
+    {
+      "id": "front_back_two_tier",
+      "slide": 9,
+      "file": "front_back_two_tier.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "37ea688b31e0d60aee88e3650a96e4c4e7ca06dc94a1dec820d0b7aaf95e7445"
+    },
+    {
+      "id": "chart_insight",
+      "slide": 10,
+      "file": "chart_insight.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "060e3cfe101865a43d5bd457805b58099dcf45f73f59e7258744c0e39dc86dda"
+    },
+    {
+      "id": "stacked_bar",
+      "slide": 11,
+      "file": "stacked_bar.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "3eea4bbd181c3db2c6c058c67c74e81ece33100199e02e8d5ecdd3d7cdba2a6c"
+    },
+    {
+      "id": "waterfall",
+      "slide": 12,
+      "file": "waterfall.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "494637ee8603981974ee5a919e318cb564151cf051f6adc0e049960ea5cc84d0"
+    },
+    {
+      "id": "true_waterfall",
+      "slide": 13,
+      "file": "true_waterfall.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "8a191e1b5549278a470387872d3009d27c8ddbbbacdc6c1b2e211afd732bb147"
+    },
+    {
+      "id": "small_multiples",
+      "slide": 14,
+      "file": "small_multiples.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "8cd93f3e49fe7d6cf3879fe764c136b04908cfa3266df9937ceb05dcdd757cb5"
+    },
+    {
+      "id": "matrix_2x2",
+      "slide": 15,
+      "file": "matrix_2x2.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "1445671e7c77738df77951167dcff1ea3c76e2b2448e1a6abd0dd501e4d94ae2"
+    },
+    {
+      "id": "issue_to_solution_map",
+      "slide": 16,
+      "file": "issue_to_solution_map.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "274c025481e55036dfa99c662b87b77584225ecf698b8fd1e92d39721d6645ec"
+    },
+    {
+      "id": "issue_tree",
+      "slide": 17,
+      "file": "issue_tree.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "80699ade0e12d5d6332c873fb5a7807783421464d84832ebe13d3849852bbd96"
+    },
+    {
+      "id": "calc_flow",
+      "slide": 18,
+      "file": "calc_flow.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "d0fd784e4daa798cd48c02f6da36feff1b2a799cb6d1566f7c5c5d3764194a06"
+    },
+    {
+      "id": "cycle",
+      "slide": 19,
+      "file": "cycle.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "2adf1d03fdc6370bf2e838d19a31cf09974b5b056c659e7c2b10956562a85849"
+    },
+    {
+      "id": "decision_fork",
+      "slide": 20,
+      "file": "decision_fork.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "578d494566d386c53b6cffcc657ed7af5f1d7354525ae263261e74da20122f0b"
+    },
+    {
+      "id": "roadmap",
+      "slide": 21,
+      "file": "roadmap.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "215cca3d502df32efe2f41969f0ef11e0ee6b5fa9369e1a2cbb48cbb7bcdaa12"
+    },
+    {
+      "id": "gantt",
+      "slide": 22,
+      "file": "gantt.png",
+      "width": 2000,
+      "height": 776,
+      "sha256": "cd126e5af360933241f9580d9196cdced37b40b3affb91c679f0036058728b81"
+    }
+  ],
+  "renderer": {
+    "soffice": "LibreOffice 24.2.7.2 420(Build:2)",
+    "poppler": "pdftoppm version 24.02.0"
+  }
+}

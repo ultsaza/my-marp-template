@@ -167,6 +167,7 @@ pre code { background: none; padding: 0; }
    表（ネイビーヘッダー）
    ============================================================ */
 table {
+  display: table;
   border-collapse: collapse;
   width: 100%;
   font-size: 0.86em;
@@ -212,7 +213,7 @@ section.title h1 {
   border: none;
   padding: 0;
   margin: 0 0 28px 0;
-  max-width: 80%;
+  max-width: 100%;
 }
 section.title h2,
 section.title h3,
@@ -281,8 +282,8 @@ section.section-light h2 {
 /* ============================================================
    レイアウト・ユーティリティ
    ============================================================ */
-.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
-.columns-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; align-items: start; }
+.columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 16px; }
+.columns-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: start; margin-bottom: 16px; }
 .columns > .col,
 .columns-3 > .col { min-width: 0; }
 .col > :first-child { margin-top: 0; }
@@ -290,18 +291,96 @@ section.section-light h2 {
 .center { text-align: center; }
 .middle { display: flex; flex-direction: column; justify-content: center; height: 100%; }
 
+/* Reusable academic layouts: surfaces and rules, never floating UI cards. */
+.grid-2, .grid-3, .compare, .matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  margin: 0 0 16px;
+}
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+:is(.grid-2, .grid-3, .compare, .matrix) > * { min-width: 0; margin: 0; }
+.matrix {
+  gap: 2px;
+  border: 2px solid var(--st-navy);
+  background: var(--st-navy);
+}
+.matrix > :is(.card, .box, .navy-card) { border: 0; background: var(--st-white); }
+
+.stack { display: grid; gap: 14px; margin: 16px 0; }
+.stack > * { margin: 0; min-width: 0; }
+.metric {
+  border-top: 1px solid var(--st-blue);
+  border-bottom: 3px solid var(--st-navy);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 18px 22px;
+  background: var(--st-white);
+}
+.metric > :is(h2, h3) { color: var(--st-navy); margin: 0 0 6px; }
+.metric > p { margin: 0; }
+.foundation {
+  border-top: 3px solid var(--st-blue);
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--st-tint);
+  padding: 16px 24px;
+  margin: 16px 0;
+}
+.foundation > :first-child { margin-top: 0; }
+.foundation > :last-child { margin-bottom: 0; }
+
+.steps {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: stretch;
+  margin: 0 0 20px;
+}
+.step {
+  position: relative;
+  min-width: 0;
+  border-top: 3px solid var(--st-navy);
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--st-tint);
+  padding: 18px 20px;
+}
+.step > :first-child { margin-top: 0; }
+.step > :last-child { margin-bottom: 0; }
+.step > :is(h2, h3, h4) { border-bottom: 1px solid var(--st-blue-l); padding-bottom: 10px; margin-bottom: 12px; }
+.steps > .step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -20px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 8px solid var(--st-navy);
+}
+
 /* 枠付きカード */
 .box, .card {
   border: 1.5px solid var(--st-blue);
-  border-radius: 10px;
+  border-radius: 0;
+  box-shadow: none;
   padding: 16px 22px;
   background: #fbfcfe;
 }
 
+.card { border-top: 3px solid var(--st-navy); background: var(--st-white); }
+.box { background: #f4f6fb; }
+:is(.box, .card, .navy-card, .callout, .note, .info, .warning) { margin-bottom: 16px; }
+:is(.box, .card, .callout, .note, .info, .warning) > :first-child { margin-top: 0; }
+:is(.box, .card, .callout, .note, .info, .warning) > :last-child { margin-bottom: 0; }
+
 /* ネイビー見出しカード（組織図・特徴ボックス風） */
 .navy-card {
   border: 1px solid var(--st-navy);
-  border-radius: 6px;
+  border-radius: 0;
+  box-shadow: none;
   overflow: hidden;
   background: var(--st-white);
 }
@@ -313,14 +392,26 @@ section.section-light h2 {
   margin: 0;
   padding: 0.5em 0.6em;
 }
-.navy-card > :first-child + * { padding: 0.5em 0.8em; margin: 0; }
+/* Every direct body block owns its inset, including later paragraphs/lists. */
+.navy-card > :not(:first-child) { padding: 10px 20px; margin: 0; }
+.navy-card > ul:not(:first-child),
+.navy-card > ol:not(:first-child) { padding-left: 46px; }
+.navy-card > :last-child:not(:first-child) { padding-bottom: 16px; }
+.navy-card > :first-child * { color: inherit; }
+.navy-card > :first-child mark { color: var(--st-ink); }
+.navy-card > :first-child code { background: rgba(255,255,255,0.14); }
+/* Collapsed tables do not honor box padding: inset the entire table as well. */
+.navy-card > table:not(:first-child) { width: calc(100% - 40px); margin: 10px 20px 16px; }
+.navy-card > :is(.note, .info, .warning, .callout):not(:first-child) { margin: 10px 20px 16px; }
+
 
 /* 左ライン強調 */
 .callout {
   border-left: 6px solid var(--st-navy);
   background: var(--st-tint);
   padding: 0.5em 0.9em;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .note,
@@ -329,7 +420,8 @@ section.section-light h2 {
   border-left: 6px solid var(--st-blue);
   background: #f4f6fb;
   padding: 0.5em 0.9em;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 .note { border-left-color: var(--st-navy); }
 .warning {
@@ -361,6 +453,49 @@ section.section-light h2 {
 .gold  { color: var(--st-gold);  font-weight: 700; }
 .gray  { color: var(--st-gray);  font-weight: 700; }
 
+/* Semantic labels retain text and line-style cues in grayscale. */
+.positive { color: var(--st-dgreen); }
+.negative { color: var(--st-red); }
+.muted { color: var(--st-gray); }
+.no-wrap { white-space: nowrap; }
+.status-high, table tbody tr td.status-high {
+  background: #edf4ee;
+  color: #285436;
+  border-bottom: 3px solid var(--st-dgreen);
+}
+.status-mid, table tbody tr td.status-mid {
+  background: #fff8e6;
+  color: #6e5014;
+  border-bottom: 3px dashed var(--st-gold);
+}
+.status-low, table tbody tr td.status-low {
+  background: #f9eeee;
+  color: #8c3531;
+  border-bottom: 3px dotted var(--st-red);
+}
+
+/* Full-width conclusions use the brand navy, never a floating banner. */
+.band {
+  padding: 18px 24px;
+  margin: 16px 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--st-navy);
+  color: var(--st-white);
+}
+/* This surface explicitly promises white foreground, even in nested components. */
+.band * { color: inherit !important; }
+.band > :first-child { margin-top: 0; }
+.band > :last-child { margin-bottom: 0; }
+.band :is(.box, .card, .navy-card, .callout, .note, .info, .warning, .metric, .foundation, .step, tr, th, td, code, pre, mark) {
+  color: inherit;
+  background: transparent;
+  border-color: rgba(255,255,255,0.45);
+}
+.band :is(ul, ol) > li::marker { color: inherit; }
+th :is(strong, a, em, code, mark) { color: inherit; }
+th :is(code, mark) { background: transparent; }
+
 /* 下線・マーカー風 */
 .underline { background: linear-gradient(transparent 62%, var(--st-blue-l) 62%); }
 
@@ -384,6 +519,37 @@ img[alt~="center"] { display: block; margin: 0.3em auto; }
 img[alt~="wide"]   { display: block; width: 100%; margin: 0.3em auto; }
 img[alt~="medium"] { display: block; max-width: 80%; margin: 0.3em auto; }
 img[alt~="short"]  { display: block; max-height: 14rem; object-fit: contain; margin: 0.3em auto; }
+
+/* Diagram exports occupy a bounded canvas, preserving source aspect ratio. */
+.figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 432px;
+  min-width: 0;
+  margin: 0;
+}
+.figure > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.figure img, .figure img[alt~="wide"] {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+
+/* A layout owns spacing between its children; standalone panels own theirs. */
+.grid-2 > *, .grid-3 > *, .compare > *, .matrix > *, .steps > .step, .stack > * { margin: 0; }
 
 /* ============================================================
    ヘッダー / フッター

@@ -1,0 +1,331 @@
+{
+  "repository": "https://github.com/carnot-tech/jinba-consulting-pptx-skill",
+  "revision": "e5f35e57e14d3998249a559c620a9286c95b4595",
+  "patterns": [
+    {
+      "key": "b01",
+      "id": "title_page",
+      "title": "表紙"
+    },
+    {
+      "key": "b02",
+      "id": "overview_map",
+      "title": "全体マップ"
+    },
+    {
+      "key": "b03",
+      "id": "table_of_contents",
+      "title": "目次"
+    },
+    {
+      "key": "b04",
+      "id": "section_divider",
+      "title": "章扉"
+    },
+    {
+      "key": "b05",
+      "id": "chevron_steps",
+      "title": "矢羽（プロセス・変遷）"
+    },
+    {
+      "key": "b06",
+      "id": "premise_conclusion",
+      "title": "前提→帰結の2カラム"
+    },
+    {
+      "key": "b07",
+      "id": "stat_table_readout",
+      "title": "大型数値の表＋読み取り"
+    },
+    {
+      "key": "b08",
+      "id": "card_grid_2x2",
+      "title": "並列カード 2×2"
+    },
+    {
+      "key": "b09",
+      "id": "axis_table",
+      "title": "軸のある表"
+    },
+    {
+      "key": "b10",
+      "id": "back_cover",
+      "title": "裏表紙"
+    },
+    {
+      "key": "b11",
+      "id": "claim_panel_figure",
+      "title": "主張パネル＋図"
+    },
+    {
+      "key": "b12",
+      "id": "lever_effect_table",
+      "title": "打ち手の効果表"
+    },
+    {
+      "key": "b13",
+      "id": "status_heatmap_comment",
+      "title": "状態ヒートマップ＋右コメント"
+    },
+    {
+      "key": "b14",
+      "id": "harvey_ball_table",
+      "title": "充足度評価表（ハーベイボール）"
+    },
+    {
+      "key": "b15",
+      "id": "dot_matrix_share",
+      "title": "割合のドットマトリクス"
+    },
+    {
+      "key": "b16",
+      "id": "progress_bubble_matrix",
+      "title": "進捗バブル行列"
+    },
+    {
+      "key": "b17",
+      "id": "ranked_bar_annotated",
+      "title": "分布の順位棒＋注記"
+    },
+    {
+      "key": "b18",
+      "id": "scatter_annotated",
+      "title": "注記つき散布図"
+    },
+    {
+      "key": "b19",
+      "id": "pillars_foundation",
+      "title": "柱＋土台"
+    },
+    {
+      "key": "b20",
+      "id": "opposing_chevrons",
+      "title": "対向シェブロン"
+    },
+    {
+      "key": "b21",
+      "id": "evidence_clip_grid",
+      "title": "外部動向の根拠グリッド"
+    },
+    {
+      "key": "b22",
+      "id": "proportional_circles",
+      "title": "比例円の対比"
+    },
+    {
+      "key": "b23",
+      "id": "delta_bars_totals",
+      "title": "増減の縦棒＋左右合計"
+    },
+    {
+      "key": "b24",
+      "id": "scenario_lines_cagr",
+      "title": "シナリオ線＋成長率チップ"
+    },
+    {
+      "key": "b25",
+      "id": "research_basis",
+      "title": "調査の土台"
+    },
+    {
+      "key": "b26",
+      "id": "issue_action_columns",
+      "title": "課題と打ち手の2カラム"
+    },
+    {
+      "key": "b27",
+      "id": "agenda_separator",
+      "title": "セパレーター（章扉＝アジェンダ再掲）"
+    },
+    {
+      "key": "b28",
+      "id": "swimlane_numbered_notes",
+      "title": "スイムレーン＋番号の付箋（縦＝担い手・横＝業務の流れに課題・適用例を番号で重ね、右に一覧）"
+    },
+    {
+      "key": "b29",
+      "id": "front_back_two_tier",
+      "title": "表と裏の2段（上段＝利用者から見た流れ、下段＝裏側の処理を縦に対応。指示の前後の比較にも使う）"
+    },
+    {
+      "key": "b30",
+      "id": "qa_list",
+      "title": "一問一答（質問は相手の言葉のまま、回答と区切り線で分ける）"
+    },
+    {
+      "key": "m01",
+      "id": "executive_summary",
+      "title": "エグゼクティブサマリー"
+    },
+    {
+      "key": "m02",
+      "id": "evidence_basis",
+      "title": "調査の土台"
+    },
+    {
+      "key": "m03",
+      "id": "big_stat_pair",
+      "title": "大型数値の対比"
+    },
+    {
+      "key": "m04",
+      "id": "kpi_dashboard",
+      "title": "KPI一覧"
+    },
+    {
+      "key": "m05",
+      "id": "chart_insight",
+      "title": "単一チャート＋含意"
+    },
+    {
+      "key": "m06",
+      "id": "stacked_bar",
+      "title": "積み上げ棒"
+    },
+    {
+      "key": "m07",
+      "id": "waterfall",
+      "title": "寄与度ブリッジ"
+    },
+    {
+      "key": "m08",
+      "id": "true_waterfall",
+      "title": "増減ブリッジ（厳密）"
+    },
+    {
+      "key": "m09",
+      "id": "small_multiples",
+      "title": "小図の並列比較"
+    },
+    {
+      "key": "m10",
+      "id": "comparison_table",
+      "title": "選択肢の比較表"
+    },
+    {
+      "key": "m11",
+      "id": "scenario_table",
+      "title": "シナリオ比較表"
+    },
+    {
+      "key": "m12",
+      "id": "risk_table",
+      "title": "リスク一覧表"
+    },
+    {
+      "key": "m13",
+      "id": "horizontal_axis_table",
+      "title": "横軸評価表"
+    },
+    {
+      "key": "m14",
+      "id": "heatmap_table",
+      "title": "ヒートマップ表"
+    },
+    {
+      "key": "m15",
+      "id": "matrix_2x2",
+      "title": "2×2マトリクス"
+    },
+    {
+      "key": "m16",
+      "id": "process_matrix",
+      "title": "プロセス×観点の行列"
+    },
+    {
+      "key": "m17",
+      "id": "nested_row_matrix",
+      "title": "入れ子行の行列"
+    },
+    {
+      "key": "m18",
+      "id": "timeline_matrix",
+      "title": "時系列マトリクス"
+    },
+    {
+      "key": "m19",
+      "id": "theme_card_grid",
+      "title": "テーマカード"
+    },
+    {
+      "key": "m20",
+      "id": "recommendation_pillars",
+      "title": "提言の柱"
+    },
+    {
+      "key": "m21",
+      "id": "numbered_imperatives",
+      "title": "番号つき打ち手"
+    },
+    {
+      "key": "m22",
+      "id": "scr",
+      "title": "これまで・課題・対策（流れの3段）"
+    },
+    {
+      "key": "m23",
+      "id": "issue_to_solution_map",
+      "title": "課題と打ち手の対応"
+    },
+    {
+      "key": "m24",
+      "id": "issue_cause_solution",
+      "title": "課題→原因→解決"
+    },
+    {
+      "key": "m25",
+      "id": "issue_tree",
+      "title": "イシューツリー"
+    },
+    {
+      "key": "m26",
+      "id": "current_target_state",
+      "title": "現状と目指す姿"
+    },
+    {
+      "key": "m27",
+      "id": "calc_flow",
+      "title": "計算ロジックの流れ"
+    },
+    {
+      "key": "m28",
+      "id": "process_flow",
+      "title": "プロセスの段階"
+    },
+    {
+      "key": "m29",
+      "id": "cycle",
+      "title": "循環サイクル"
+    },
+    {
+      "key": "m30",
+      "id": "chevron_rail",
+      "title": "矢羽の段階（全体像の見出し）"
+    },
+    {
+      "key": "m31",
+      "id": "chevron_value_chain",
+      "title": "バリューチェーン"
+    },
+    {
+      "key": "m32",
+      "id": "decision_fork",
+      "title": "分岐と判断"
+    },
+    {
+      "key": "m33",
+      "id": "roadmap",
+      "title": "ロードマップ"
+    },
+    {
+      "key": "m34",
+      "id": "gantt",
+      "title": "ガントチャート"
+    },
+    {
+      "key": "m35",
+      "id": "decision_page",
+      "title": "意思決定ページ"
+    }
+  ]
+}

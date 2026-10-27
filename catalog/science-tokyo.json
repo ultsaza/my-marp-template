@@ -1,0 +1,593 @@
+{
+  "reference": {
+    "repository": "https://github.com/carnot-tech/jinba-consulting-pptx-skill",
+    "revision": "e5f35e57e14d3998249a559c620a9286c95b4595"
+  },
+  "patterns": [
+    {
+      "key": "b01",
+      "id": "title_page",
+      "title": "表紙",
+      "mode": "markdown",
+      "slide": 1,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b02",
+      "id": "overview_map",
+      "title": "全体マップ",
+      "mode": "markdown",
+      "slide": 2,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b03",
+      "id": "table_of_contents",
+      "title": "目次",
+      "mode": "markdown",
+      "slide": 3,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b04",
+      "id": "section_divider",
+      "title": "章扉",
+      "mode": "markdown",
+      "slide": 4,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b05",
+      "id": "chevron_steps",
+      "title": "矢羽（プロセス・変遷）",
+      "mode": "markdown",
+      "slide": 5,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b06",
+      "id": "premise_conclusion",
+      "title": "前提→帰結の2カラム",
+      "mode": "markdown",
+      "slide": 6,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b07",
+      "id": "stat_table_readout",
+      "title": "大型数値の表＋読み取り",
+      "mode": "markdown",
+      "slide": 7,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b08",
+      "id": "card_grid_2x2",
+      "title": "並列カード 2×2",
+      "mode": "markdown",
+      "slide": 8,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b09",
+      "id": "axis_table",
+      "title": "軸のある表",
+      "mode": "markdown",
+      "slide": 9,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b10",
+      "id": "back_cover",
+      "title": "裏表紙",
+      "mode": "markdown",
+      "slide": 10,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b11",
+      "id": "claim_panel_figure",
+      "title": "主張パネル＋図",
+      "mode": "markdown",
+      "slide": 11,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b12",
+      "id": "lever_effect_table",
+      "title": "打ち手の効果表",
+      "mode": "markdown",
+      "slide": 12,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b13",
+      "id": "status_heatmap_comment",
+      "title": "状態ヒートマップ＋右コメント",
+      "mode": "markdown",
+      "slide": 13,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b14",
+      "id": "harvey_ball_table",
+      "title": "充足度評価表（ハーベイボール）",
+      "mode": "markdown",
+      "slide": 14,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b15",
+      "id": "dot_matrix_share",
+      "title": "割合のドットマトリクス",
+      "mode": "pptx-image",
+      "slide": 15,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/dot_matrix_share.png"
+    },
+    {
+      "key": "b16",
+      "id": "progress_bubble_matrix",
+      "title": "進捗バブル行列",
+      "mode": "pptx-image",
+      "slide": 16,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/progress_bubble_matrix.png"
+    },
+    {
+      "key": "b17",
+      "id": "ranked_bar_annotated",
+      "title": "分布の順位棒＋注記",
+      "mode": "pptx-image",
+      "slide": 17,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/ranked_bar_annotated.png"
+    },
+    {
+      "key": "b18",
+      "id": "scatter_annotated",
+      "title": "注記つき散布図",
+      "mode": "pptx-image",
+      "slide": 18,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/scatter_annotated.png"
+    },
+    {
+      "key": "b19",
+      "id": "pillars_foundation",
+      "title": "柱＋土台",
+      "mode": "markdown",
+      "slide": 19,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b20",
+      "id": "opposing_chevrons",
+      "title": "対向シェブロン",
+      "mode": "markdown",
+      "slide": 20,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b21",
+      "id": "evidence_clip_grid",
+      "title": "外部動向の根拠グリッド",
+      "mode": "markdown",
+      "slide": 21,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b22",
+      "id": "proportional_circles",
+      "title": "比例円の対比",
+      "mode": "pptx-image",
+      "slide": 22,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/proportional_circles.png"
+    },
+    {
+      "key": "b23",
+      "id": "delta_bars_totals",
+      "title": "増減の縦棒＋左右合計",
+      "mode": "pptx-image",
+      "slide": 23,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/delta_bars_totals.png"
+    },
+    {
+      "key": "b24",
+      "id": "scenario_lines_cagr",
+      "title": "シナリオ線＋成長率チップ",
+      "mode": "pptx-image",
+      "slide": 24,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/scenario_lines_cagr.png"
+    },
+    {
+      "key": "b25",
+      "id": "research_basis",
+      "title": "調査の土台",
+      "mode": "markdown",
+      "slide": 25,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b26",
+      "id": "issue_action_columns",
+      "title": "課題と打ち手の2カラム",
+      "mode": "markdown",
+      "slide": 26,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b27",
+      "id": "agenda_separator",
+      "title": "セパレーター（章扉＝アジェンダ再掲）",
+      "mode": "markdown",
+      "slide": 27,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "b28",
+      "id": "swimlane_numbered_notes",
+      "title": "スイムレーン＋番号の付箋（縦＝担い手・横＝業務の流れに課題・適用例を番号で重ね、右に一覧）",
+      "mode": "pptx-image",
+      "slide": 28,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/swimlane_numbered_notes.png"
+    },
+    {
+      "key": "b29",
+      "id": "front_back_two_tier",
+      "title": "表と裏の2段（上段＝利用者から見た流れ、下段＝裏側の処理を縦に対応。指示の前後の比較にも使う）",
+      "mode": "pptx-image",
+      "slide": 29,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/front_back_two_tier.png"
+    },
+    {
+      "key": "b30",
+      "id": "qa_list",
+      "title": "一問一答（質問は相手の言葉のまま、回答と区切り線で分ける）",
+      "mode": "markdown",
+      "slide": 30,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m01",
+      "id": "executive_summary",
+      "title": "エグゼクティブサマリー",
+      "mode": "markdown",
+      "slide": 31,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m02",
+      "id": "evidence_basis",
+      "title": "調査の土台",
+      "mode": "markdown",
+      "slide": 32,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m03",
+      "id": "big_stat_pair",
+      "title": "大型数値の対比",
+      "mode": "markdown",
+      "slide": 33,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m04",
+      "id": "kpi_dashboard",
+      "title": "KPI一覧",
+      "mode": "markdown",
+      "slide": 34,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m05",
+      "id": "chart_insight",
+      "title": "単一チャート＋含意",
+      "mode": "pptx-image",
+      "slide": 35,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/chart_insight.png"
+    },
+    {
+      "key": "m06",
+      "id": "stacked_bar",
+      "title": "積み上げ棒",
+      "mode": "pptx-image",
+      "slide": 36,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/stacked_bar.png"
+    },
+    {
+      "key": "m07",
+      "id": "waterfall",
+      "title": "寄与度ブリッジ",
+      "mode": "pptx-image",
+      "slide": 37,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/waterfall.png"
+    },
+    {
+      "key": "m08",
+      "id": "true_waterfall",
+      "title": "増減ブリッジ（厳密）",
+      "mode": "pptx-image",
+      "slide": 38,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/true_waterfall.png"
+    },
+    {
+      "key": "m09",
+      "id": "small_multiples",
+      "title": "小図の並列比較",
+      "mode": "pptx-image",
+      "slide": 39,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/small_multiples.png"
+    },
+    {
+      "key": "m10",
+      "id": "comparison_table",
+      "title": "選択肢の比較表",
+      "mode": "markdown",
+      "slide": 40,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m11",
+      "id": "scenario_table",
+      "title": "シナリオ比較表",
+      "mode": "markdown",
+      "slide": 41,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m12",
+      "id": "risk_table",
+      "title": "リスク一覧表",
+      "mode": "markdown",
+      "slide": 42,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m13",
+      "id": "horizontal_axis_table",
+      "title": "横軸評価表",
+      "mode": "markdown",
+      "slide": 43,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m14",
+      "id": "heatmap_table",
+      "title": "ヒートマップ表",
+      "mode": "markdown",
+      "slide": 44,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m15",
+      "id": "matrix_2x2",
+      "title": "2×2マトリクス",
+      "mode": "pptx-image",
+      "slide": 45,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/matrix_2x2.png"
+    },
+    {
+      "key": "m16",
+      "id": "process_matrix",
+      "title": "プロセス×観点の行列",
+      "mode": "markdown",
+      "slide": 46,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m17",
+      "id": "nested_row_matrix",
+      "title": "入れ子行の行列",
+      "mode": "markdown",
+      "slide": 47,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m18",
+      "id": "timeline_matrix",
+      "title": "時系列マトリクス",
+      "mode": "markdown",
+      "slide": 48,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m19",
+      "id": "theme_card_grid",
+      "title": "テーマカード",
+      "mode": "markdown",
+      "slide": 49,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m20",
+      "id": "recommendation_pillars",
+      "title": "提言の柱",
+      "mode": "markdown",
+      "slide": 50,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m21",
+      "id": "numbered_imperatives",
+      "title": "番号つき打ち手",
+      "mode": "markdown",
+      "slide": 51,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m22",
+      "id": "scr",
+      "title": "これまで・課題・対策（流れの3段）",
+      "mode": "markdown",
+      "slide": 52,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m23",
+      "id": "issue_to_solution_map",
+      "title": "課題と打ち手の対応",
+      "mode": "pptx-image",
+      "slide": 53,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/issue_to_solution_map.png"
+    },
+    {
+      "key": "m24",
+      "id": "issue_cause_solution",
+      "title": "課題→原因→解決",
+      "mode": "markdown",
+      "slide": 54,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m25",
+      "id": "issue_tree",
+      "title": "イシューツリー",
+      "mode": "pptx-image",
+      "slide": 55,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/issue_tree.png"
+    },
+    {
+      "key": "m26",
+      "id": "current_target_state",
+      "title": "現状と目指す姿",
+      "mode": "markdown",
+      "slide": 56,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m27",
+      "id": "calc_flow",
+      "title": "計算ロジックの流れ",
+      "mode": "pptx-image",
+      "slide": 57,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/calc_flow.png"
+    },
+    {
+      "key": "m28",
+      "id": "process_flow",
+      "title": "プロセスの段階",
+      "mode": "markdown",
+      "slide": 58,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m29",
+      "id": "cycle",
+      "title": "循環サイクル",
+      "mode": "pptx-image",
+      "slide": 59,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/cycle.png"
+    },
+    {
+      "key": "m30",
+      "id": "chevron_rail",
+      "title": "矢羽の段階（全体像の見出し）",
+      "mode": "markdown",
+      "slide": 60,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m31",
+      "id": "chevron_value_chain",
+      "title": "バリューチェーン",
+      "mode": "markdown",
+      "slide": 61,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    },
+    {
+      "key": "m32",
+      "id": "decision_fork",
+      "title": "分岐と判断",
+      "mode": "pptx-image",
+      "slide": 62,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/decision_fork.png"
+    },
+    {
+      "key": "m33",
+      "id": "roadmap",
+      "title": "ロードマップ",
+      "mode": "pptx-image",
+      "slide": 63,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/roadmap.png"
+    },
+    {
+      "key": "m34",
+      "id": "gantt",
+      "title": "ガントチャート",
+      "mode": "pptx-image",
+      "slide": 64,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": "assets/science-tokyo/diagrams/gantt.png"
+    },
+    {
+      "key": "m35",
+      "id": "decision_page",
+      "title": "意思決定ページ",
+      "mode": "markdown",
+      "slide": 65,
+      "source": "slides/science-tokyo-catalog.md",
+      "diagram": null
+    }
+  ]
+}

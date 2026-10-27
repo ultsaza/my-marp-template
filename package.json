@@ -7,7 +7,15 @@
     "preview": "marp --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -s --allow-local-files",
     "build": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o html --allow-local-files",
     "build:pdf": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o pdf --pdf --allow-local-files",
-    "build:pptx": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o pptx --pptx --allow-local-files"
+    "build:pptx": "node scripts/marp-timed.mjs --engine ./engine.mjs --theme-set style.css science-tokyo.css --input-dir slides -o pptx --pptx --allow-local-files",
+    "test": "node --test tests/*.test.mjs",
+    "test:artifacts": "python3 -m unittest discover -s tests -p test_artifacts.py",
+    "test:diagrams": ".venv-diagrams/bin/python -m unittest discover -s tests -p test_diagrams.py",
+    "diagrams:build": ".venv-diagrams/bin/python scripts/build-science-tokyo-diagrams.py",
+    "diagrams:export": ".venv-diagrams/bin/python scripts/build-science-tokyo-diagrams.py --export-only",
+    "verify:layout": "node scripts/verify-science-tokyo.mjs",
+    "verify:artifacts": "python3 scripts/verify-science-tokyo-artifacts.py",
+    "verify": "npm test && npm run test:artifacts && npm run test:diagrams && npm run build && npm run build:pdf && npm run build:pptx && npm run verify:layout && npm run verify:artifacts"
   },
   "keywords": ["marp", "slides", "presentation"],
   "author": "",
@@ -15,6 +23,8 @@
   "type": "module",
   "devDependencies": {
     "@marp-team/marp-cli": "^4.3.1",
+    "@marp-team/marp-core": "4.3.0",
+    "puppeteer-core": "24.40.0",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-container": "^4.0.0",
     "markdown-it-mark": "^4.0.0"
